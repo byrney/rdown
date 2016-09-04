@@ -26,3 +26,10 @@ ggplot(data = weather, mapping = aes(x = temp)) +
   geom_histogram(binwidth = 10, color = "white", fill = "red")
 ```
 
+## Different facet plots for each month
+
+```{r}
+ggplot(data = weather, mapping = aes(x = temp)) +
+  geom_histogram(binwidth = 5, color = "white", fill = "firebrick") +
+  facet_wrap(~month)
+```
