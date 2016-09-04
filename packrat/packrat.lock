@@ -3,10 +3,21 @@ PackratVersion: 0.4.7.1
 RVersion: 3.3.1
 Repos: CRAN=https://cran.rstudio.com/
 
+Package: DBI
+Source: CRAN
+Version: 0.5
+Hash: b4baa1938fb20e76519e8aa253fe60a6
+
 Package: RColorBrewer
 Source: CRAN
 Version: 1.1-2
 Hash: c0d56cd15034f395874c870141870c25
+
+Package: RPostgreSQL
+Source: CRAN
+Version: 0.4-1
+Hash: 42460e37a21dc9e3f1f47c7d8d210592
+Requires: DBI
 
 Package: Rcpp
 Source: CRAN

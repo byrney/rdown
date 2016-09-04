@@ -1,0 +1,28 @@
+---
+title: "Modern Exercises"
+author: "Robert Byrne"
+date: "9/4/2016"
+output: html_document
+---
+
+## Prerequisites
+
+```{r}
+library(ggplot2)
+library(nycflights13)
+```
+
+
+## Load the data
+
+```{r}
+data(weather)
+```
+
+## Create the plot
+
+```{r}
+ggplot(data = weather, mapping = aes(x = temp)) +
+  geom_histogram(binwidth = 10, color = "white", fill = "red")
+```
+
